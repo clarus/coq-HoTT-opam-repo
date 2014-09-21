@@ -6,9 +6,7 @@ bug-reports: "https://github.com/HoTT/HoTT/issues"
 # authors: "TODO"
 license: "BSD 2-clause"
 build: [
-  [ "aclocal" ]
-  [ "autoconf" ]
-  [ "automake" "--add-missing" ]
+  [ "./autogen.sh" ]
   [ "./configure" ]
   [ make ]
   [ make "install" ]
